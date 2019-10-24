@@ -1,0 +1,35 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    font-style: oblique;
+    font-family: Arial, Helvetica, sans-serif;
+    color: honeydew;
+    background:slategrey;
+}
+table,tr,th,td{
+    border: 1px dashed black;
+    border-collapse: collapse;
+    margin-top: 1em;
+    padding: 15px;
+    background:tan;
+}
+button, .del {
+    border: none;
+    color: rgb(226, 112, 31);
+    border-radius: 5px;
+    padding: 3px 8px;
+    background: lavenderblush;
+}
+input{
+    margin: 0 20px;;
+}
+h1{
+    text-align: center;
+    margin-bottom: 1em;
+}
+div {
+    align-items: center;
+}
+input::placeholder{
+    color:#fff;
+}
