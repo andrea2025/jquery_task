@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0 auto;
+            font-style: oblique;
+            font-family: Arial, Helvetica, sans-serif;
+            color: honeydew;
+            background:slategrey;
+        }
+        table,tr,td{
+            border: 1px dashed black;
+            border-collapse: collapse;
+            margin-top: 1em;
+            padding: 15px;
+            background:tan;
+        }
+        button, .del {
+            border: none;
+            color: rgb(226, 112, 31);
+            border-radius: 5px;
+            padding: 3px 8px;
+            background: lavenderblush;
+        }
+        input{
+            margin: 0 20px;;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        div {
+            align-items: center;
+        }
+        input::placeholder{
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+   
+    <div>
+         <h1>My Book Collection</h1>
+        <label>Title:</label>
+        <input type="text" name="title" id="title" placeholder="Title name">
+        <label>Author:</label>
+        <input type="text" name="title" id="author" placeholder="Author name"> 
+        <label>Rating:</label>
+        <input type="number" name="rating" id="Rating" placeholder="1-10" min='1' max="10"> 
+        <button id="btn">Rate Book</button>
+    </div>
+
+    
+    <table id="rr">
+        <tr>
+            <td>Title</td>
+            <td>Author</td>
+            <td>Rating</td>
+            <td id="">Delete</td>
+        </tr>
+        <tr>
+            <td>the voice in the wind</td>
+            <td>francine river</td>
+            <td>5</td>
+            <td><input type="button" class="del" value="Remove"></td>
+        </tr>
+    </table>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="list.js"></script>
+</body>
+</html>
